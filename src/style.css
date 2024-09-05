@@ -1,0 +1,16 @@
+body {
+  background-color: #000;
+}
+
+:root {
+  --primary-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: var(--primary-font-family);
+}
+
+p {
+  font-family: var(--secondary-font-family);
+}
