@@ -1,16 +1,64 @@
-body {
-  background-color: #000;
-}
-
 :root {
   --primary-font-family: "Roboto", sans-serif;
   --secondary-font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background-color: #1b1b1b;
+}
+.container-hero {
+  padding: 275px 0 300px 0;
+  background-image: url("/images/hero-bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 h1 {
   font-family: var(--primary-font-family);
+  font-weight: bold;
+  font-size: 72px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding-top: 25px;
+  text-decoration: overline;
+}
+
+h2 {
+  font-family: var(--primary-font-family);
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 p {
   font-family: var(--secondary-font-family);
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.hero-button {
+  font-family: var(--secondary-font-family);
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #272142;
+  background-color: #fff;
+  padding: 18px 30px;
+  border-radius: 50px;
+}
+
+.container-button {
+  margin-top: 48px;
+  text-align: center;
 }
