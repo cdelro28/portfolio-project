@@ -43,6 +43,7 @@ p {
   text-align: center;
   color: #fff;
   margin-top: 25px;
+  line-height: 2;
 }
 
 .hero-button {
@@ -61,4 +62,71 @@ p {
 .container-button {
   margin-top: 48px;
   text-align: center;
+}
+
+.box {
+  display: block;
+  margin: auto 0;
+  padding: 50px 25px;
+}
+
+@media (min-width: 992px) {
+  .description-box {
+    text-align: left;
+  }
+}
+
+@media (max-width: 1062px) {
+  .name {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .container-hero {
+    padding: 160px 0 100px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-button {
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    border-radius: 25px;
+  }
+
+  .container-button {
+    margin-top: 24px;
+  }
+
+  .box {
+    display: block;
+    margin: auto 0;
+    padding: 24px 12px;
+  }
 }
