@@ -59,6 +59,10 @@ p {
   border-radius: 50px;
 }
 
+footer {
+  background-color: #282323;
+}
+
 .container-button {
   margin-top: 48px;
   text-align: center;
