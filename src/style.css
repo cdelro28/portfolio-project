@@ -6,23 +6,18 @@
 body {
   background-color: #1b1b1b;
 }
-.container-hero {
-  padding: 275px 0 300px 0;
-  background-image: url("/images/hero-bg-image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 h1 {
   font-family: var(--primary-font-family);
   font-weight: bold;
   font-size: 72px;
-  text-align: center;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 10px;
   padding-top: 25px;
+}
+
+.heading-style {
   text-decoration: overline;
 }
 
@@ -30,8 +25,16 @@ h2 {
   font-family: var(--primary-font-family);
   font-weight: bold;
   font-size: 24px;
-  text-align: center;
   color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+h3 {
+  font-family: var(--primary-font-family);
+  font-weight: bold;
+  font-size: 18px;
+  color: #f65282;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
@@ -40,13 +43,20 @@ p {
   font-family: var(--secondary-font-family);
   font-weight: normal;
   font-size: 18px;
-  text-align: center;
   color: #fff;
   margin-top: 25px;
   line-height: 2;
 }
 
-.hero-button {
+.container-hero {
+  padding: 275px 0 300px 0;
+  background-image: url("/images/hero-bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.click-button {
   font-family: var(--secondary-font-family);
   font-weight: bold;
   font-size: 14px;
@@ -65,7 +75,6 @@ footer {
 
 .container-button {
   margin-top: 48px;
-  text-align: center;
 }
 
 .box {
@@ -74,9 +83,10 @@ footer {
   padding: 50px 25px;
 }
 
-@media (min-width: 992px) {
-  .description-box {
-    text-align: left;
+@media (max-width: 1400px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -90,19 +100,34 @@ footer {
   }
 }
 
+@media (max-width: 991px) {
+  h1,
+  h2,
+  h3,
+  p {
+    text-align: center;
+  }
+
+  .container-button {
+    text-align: center;
+  }
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 38px;
+    text-align: center;
   }
 
-  h2 {
+  h2. h3 {
     font-size: 18px;
     letter-spacing: 3px;
+    text-align: center;
   }
 
   p {
     font-size: 12px;
-    line-height: 1.5;
+    text-align: center;
   }
 
   .container-hero {
@@ -117,7 +142,7 @@ footer {
     flex-direction: column;
   }
 
-  .hero-button {
+  .click-button {
     font-size: 10px;
     letter-spacing: 2px;
     padding: 10px 15px;
@@ -126,11 +151,10 @@ footer {
 
   .container-button {
     margin-top: 24px;
+    text-align: center;
   }
 
   .box {
-    display: block;
-    margin: auto 0;
     padding: 24px 12px;
   }
 }
