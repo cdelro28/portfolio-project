@@ -5,51 +5,31 @@
 
 body {
   background-color: #1b1b1b;
+  color: #fff;
 }
 
 h1 {
   font-family: var(--primary-font-family);
   font-weight: bold;
-  font-size: 72px;
-  color: #fff;
   text-transform: uppercase;
-  letter-spacing: 10px;
-  padding-top: 25px;
-}
-
-.heading-style {
-  text-decoration: overline;
 }
 
 h2 {
   font-family: var(--primary-font-family);
   font-weight: bold;
-  font-size: 24px;
-  color: #fff;
   text-transform: uppercase;
-  letter-spacing: 5px;
-}
-
-h3 {
-  font-family: var(--primary-font-family);
-  font-weight: bold;
-  font-size: 18px;
-  color: #f65282;
-  text-transform: uppercase;
-  letter-spacing: 5px;
 }
 
 p {
   font-family: var(--secondary-font-family);
   font-weight: normal;
-  font-size: 18px;
-  color: #fff;
-  margin-top: 25px;
-  line-height: 2;
+}
+
+footer {
+  background-color: #282323;
 }
 
 .container-hero {
-  padding: 275px 0 300px 0;
   background-image: url("/images/hero-bg-image.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,102 +39,137 @@ p {
 .click-button {
   font-family: var(--secondary-font-family);
   font-weight: bold;
-  font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 4px;
   color: #272142;
   background-color: #fff;
-  padding: 18px 30px;
-  border-radius: 50px;
 }
 
-footer {
-  background-color: #282323;
+.heading-style {
+  text-decoration: overline;
 }
 
-.container-button {
-  margin-top: 48px;
-}
-
-.box {
-  display: block;
-  margin: auto 0;
-  padding: 50px 25px;
-}
-
-@media (max-width: 1400px) {
-  .about-section {
-    display: flex;
-    flex-direction: column;
+/* small devices */
+@media (max-width: 576px) {
+  body {
+    text-align: center;
+    padding: 10px;
   }
-}
-
-@media (max-width: 1062px) {
+  h1,
+  h2 {
+    letter-spacing: 5px;
+    line-height: 1.5;
+    padding: 5px 0;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+    margin: 0 10px 30px 10px;
+    line-height: 2;
+  }
+  .container-hero {
+    padding: 100px 0;
+  }
   .name {
     display: flex;
     flex-direction: column;
   }
-  h1 {
+  .click-button {
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 15px 25px;
+    border-radius: 30px;
+  }
+  .box {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  body {
+    text-align: center;
+  }
+}
+/* medium devices*/
+@media (min-width: 576px) and (max-width: 922px) {
+  h1,
+  h2 {
+    letter-spacing: 10px;
     line-height: 1.5;
   }
-}
-
-@media (max-width: 991px) {
-  h1,
-  h2,
-  h3,
-  p {
-    text-align: center;
-  }
-
-  .container-button {
-    text-align: center;
-  }
-}
-
-@media (max-width: 600px) {
   h1 {
-    font-size: 38px;
-    text-align: center;
+    font-size: 34px;
   }
-
-  h2. h3 {
-    font-size: 18px;
-    letter-spacing: 3px;
-    text-align: center;
+  h2 {
+    font-size: 30px;
   }
-
   p {
-    font-size: 12px;
-    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .container-hero {
-    padding: 160px 0 100px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    padding: 150px 0;
   }
-
   .name {
     display: flex;
     flex-direction: column;
   }
-
   .click-button {
-    font-size: 10px;
-    letter-spacing: 2px;
-    padding: 10px 15px;
-    border-radius: 25px;
+    font-size: 14px;
+    letter-spacing: 4px;
+    padding: 15px 25px;
+    border-radius: 50px;
   }
-
   .container-button {
-    margin-top: 24px;
     text-align: center;
+    margin-top: 30px;
   }
-
   .box {
-    padding: 24px 12px;
+    padding: 10px;
+  }
+  .row {
+    padding: 40px;
+  }
+}
+
+/* large & xlarge devices */
+@media (min-width: 922px) {
+  h1 {
+    font-size: 72px;
+    letter-spacing: 10px;
+    padding-top: 25px;
+  }
+  h2 {
+    font-size: 24px;
+    letter-spacing: 5px;
+  }
+  p {
+    font-size: 18px;
+    margin-top: 25px;
+    line-height: 2;
+  }
+  .container-hero {
+    padding: 250px 0 250px 0;
+  }
+  .click-button {
+    font-size: 14px;
+    letter-spacing: 4px;
+    border-radius: 50px;
+    padding: 18px 30px;
+  }
+  .container-button {
+    margin-top: 30px;
+  }
+  .box {
+    padding: 40px;
+  }
+  .row {
+    padding: 20px 40px;
   }
 }
