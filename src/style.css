@@ -83,7 +83,7 @@ footer p {
 .container-footing {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  padding: 5px 40px;
 }
 
 .logo {
@@ -200,7 +200,7 @@ footer li a i:hover {
   .container-footing {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
   }
 }
 
