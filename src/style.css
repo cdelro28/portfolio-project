@@ -57,6 +57,20 @@ footer {
   text-decoration: overline;
 }
 
+.container-work {
+  text-align: center;
+}
+
+.container-work h1 {
+  letter-spacing: 10px;
+  margin-top: 30px;
+}
+
+.container-work h3 {
+  margin-top: 20px;
+  color: #fff;
+}
+
 /* small devices */
 @media (max-width: 576px) {
   body {
