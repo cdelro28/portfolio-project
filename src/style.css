@@ -54,7 +54,36 @@ nav li.active a {
   color: #f65282;
 }
 footer {
+  padding: 25px 0;
   background-color: #282323;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  display: inline;
+  list-style: none;
+  padding: 10px;
+}
+
+footer li i {
+  color: #fff;
+  font-size: 20px;
+}
+
+footer li a {
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 16px;
+}
+.container-footing {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
 }
 
 .logo {
@@ -106,7 +135,8 @@ nav ul a {
   color: #fff;
 }
 .container-contact a:hover,
-nav ul a:hover {
+nav ul a:hover,
+footer li a i:hover {
   color: #f65282;
   cursor: pointer;
   transition: all 150ms ease-in-out;
@@ -147,6 +177,10 @@ nav ul a:hover {
   nav ul a {
     font-size: 18px;
   }
+
+  footer ul li {
+    text-align: center;
+  }
   .container-hero {
     padding: 100px 0;
   }
@@ -162,6 +196,11 @@ nav ul a:hover {
   }
   .box {
     padding-bottom: 60px;
+  }
+  .container-footing {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
   }
 }
 
