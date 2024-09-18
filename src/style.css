@@ -136,7 +136,8 @@ nav ul a {
 }
 .container-contact a:hover,
 nav ul a:hover,
-footer li a i:hover {
+footer li a i:hover,
+.project-repository a:hover {
   color: #f65282;
   cursor: pointer;
   transition: all 150ms ease-in-out;
@@ -144,6 +145,17 @@ footer li a i:hover {
 
 .container-contact i {
   margin-right: 10px;
+}
+
+.project-repository {
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.project-repository a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* small devices */
